@@ -42,7 +42,6 @@ Partial Class Ingreso
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -54,6 +53,7 @@ Partial Class Ingreso
         Me.ListHistorial = New System.Windows.Forms.ListBox()
         Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.BtnRegresar = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -200,7 +200,7 @@ Partial Class Ingreso
         'ListDescripcion
         '
         Me.ListDescripcion.FormattingEnabled = True
-        Me.ListDescripcion.Location = New System.Drawing.Point(22, 39)
+        Me.ListDescripcion.Location = New System.Drawing.Point(84, 44)
         Me.ListDescripcion.Name = "ListDescripcion"
         Me.ListDescripcion.Size = New System.Drawing.Size(244, 95)
         Me.ListDescripcion.TabIndex = 11
@@ -208,7 +208,7 @@ Partial Class Ingreso
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(19, 23)
+        Me.Label7.Location = New System.Drawing.Point(81, 28)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 13)
         Me.Label7.TabIndex = 12
@@ -230,9 +230,9 @@ Partial Class Ingreso
         Me.Panel3.Controls.Add(Me.ListHistorial)
         Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.ListDescripcion)
-        Me.Panel3.Location = New System.Drawing.Point(419, 23)
+        Me.Panel3.Location = New System.Drawing.Point(336, 23)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(363, 461)
+        Me.Panel3.Size = New System.Drawing.Size(446, 461)
         Me.Panel3.TabIndex = 13
         '
         'Label14
@@ -243,15 +243,6 @@ Partial Class Ingreso
         Me.Label14.Size = New System.Drawing.Size(45, 13)
         Me.Label14.TabIndex = 22
         Me.Label14.Text = "Muertos"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 177)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(71, 13)
-        Me.Label13.TabIndex = 21
-        Me.Label13.Text = "Recuperados"
         '
         'Label12
         '
@@ -265,7 +256,7 @@ Partial Class Ingreso
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(117, 377)
+        Me.Label11.Location = New System.Drawing.Point(345, 249)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 19
@@ -274,7 +265,7 @@ Partial Class Ingreso
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(224, 377)
+        Me.Label10.Location = New System.Drawing.Point(345, 316)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 18
@@ -283,7 +274,7 @@ Partial Class Ingreso
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(19, 374)
+        Me.Label9.Location = New System.Drawing.Point(345, 177)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 17
@@ -291,21 +282,21 @@ Partial Class Ingreso
         '
         'TxtMuertos
         '
-        Me.TxtMuertos.Location = New System.Drawing.Point(227, 393)
+        Me.TxtMuertos.Location = New System.Drawing.Point(348, 332)
         Me.TxtMuertos.Name = "TxtMuertos"
         Me.TxtMuertos.Size = New System.Drawing.Size(60, 20)
         Me.TxtMuertos.TabIndex = 16
         '
         'TxtRecuperados
         '
-        Me.TxtRecuperados.Location = New System.Drawing.Point(120, 393)
+        Me.TxtRecuperados.Location = New System.Drawing.Point(348, 265)
         Me.TxtRecuperados.Name = "TxtRecuperados"
         Me.TxtRecuperados.Size = New System.Drawing.Size(60, 20)
         Me.TxtRecuperados.TabIndex = 15
         '
         'TxtActivos
         '
-        Me.TxtActivos.Location = New System.Drawing.Point(22, 393)
+        Me.TxtActivos.Location = New System.Drawing.Point(348, 196)
         Me.TxtActivos.Name = "TxtActivos"
         Me.TxtActivos.Size = New System.Drawing.Size(60, 20)
         Me.TxtActivos.TabIndex = 11
@@ -339,6 +330,15 @@ Partial Class Ingreso
         Me.BtnRegresar.TabIndex = 14
         Me.BtnRegresar.Text = "Regresar"
         Me.BtnRegresar.UseVisualStyleBackColor = True
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(7, 177)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(71, 13)
+        Me.Label13.TabIndex = 21
+        Me.Label13.Text = "Recuperados"
         '
         'Ingreso
         '
@@ -393,6 +393,6 @@ Partial Class Ingreso
     Friend WithEvents ErrorValidacion As ErrorProvider
     Friend WithEvents BtnRegresar As Button
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
 End Class
